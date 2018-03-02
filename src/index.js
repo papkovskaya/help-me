@@ -2,6 +2,9 @@ module.exports = function count(s, pairs) {
   let N = 1;
   let result = 0;
   let mass = "";
+  if (s.length > 5 || pairs.length > 8){
+    return;
+  }
   for (let i = 0; i < pairs.length; i++){
     if (pairs[i][1] < 10){
       N *= pairs[i][0];
