@@ -37,7 +37,7 @@ module.exports = function count(s, pairs) {
       let check = true;
       for ( let j = 1; j < s.length; j++){
         k++;
-        if (mass[k] != s[i]){
+        if (mass[k] != s[j]){
           check = false;
           break;
         }
@@ -60,4 +60,3 @@ module.exports = function count(s, pairs) {
   result = result % 1000000007;
   return result;
 }
-
